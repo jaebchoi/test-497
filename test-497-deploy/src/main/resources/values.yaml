@@ -2,7 +2,7 @@ spec:
   destination:
     server: https://kubernetes.default.svc
   targetRevision: dev
-  repo: https://github.com/cwoods-cpointe/test-497
+  repo: https://github.com/jaebchoi/test-497
   helm:
     valueFiles:
       - values.yaml

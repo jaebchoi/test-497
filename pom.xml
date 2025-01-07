@@ -86,9 +86,9 @@
     <!-- END: workaround to get maven build cache invalidation on new SNAPSHOTS of plugin dependencies -->
   </dependencies>
   <scm>
-    <connection>scm:git:https://github.com/cwoods-cpointe/test-497.git</connection>
-    <developerConnection>scm:git:https://github.com/cwoods-cpointe/test-497.git</developerConnection>
-    <url>https://github.com/cwoods-cpointe/test-497</url>
+    <connection>scm:git:https://github.com/jaebchoi/test-497.git</connection>
+    <developerConnection>scm:git:https://github.com/jaebchoi/test-497.git</developerConnection>
+    <url>https://github.com/jaebchoi/test-497</url>
     <tag>HEAD</tag>
   </scm>
   <distributionManagement>

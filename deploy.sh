@@ -19,7 +19,7 @@ startup() {
   if ! kubectl rollout status --namespace argocd deployment/argocd-server --timeout=30s; then
     exit $?
   fi
-  argocd repo add https://github.com/cwoods-cpointe/test-497 --server localhost:30080 --plaintext --insecure-skip-server-verification
+  argocd repo add https://github.com/jaebchoi/test-497 --server localhost:30080 --plaintext --insecure-skip-server-verification
 }
 
 is_app_running() {
@@ -42,7 +42,7 @@ deploy() {
       --server localhost:30080 --plaintext \
       --dest-namespace test-497 \
       --dest-server https://kubernetes.default.svc \
-      --repo https://github.com/cwoods-cpointe/test-497 \
+      --repo https://github.com/jaebchoi/test-497 \
       --path test-497-deploy/src/main/resources \
       --revision $branch \
       --helm-set spec.targetRevision=$branch \
